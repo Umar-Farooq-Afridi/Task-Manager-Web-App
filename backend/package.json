@@ -1,0 +1,26 @@
+{
+  "name": "express-mongobd-practice",
+  "version": "1.0.0",
+  "description": "Replace the in-memory array from Day 23 with a real MongoDB collection via Mongoose. Define a Task schema (title, description, completed, createdAt) and wire all CRUD routes to the database.",
+  "keywords": [
+    "CLI_Based_Task_Manager",
+    "Express_MongoDB_CLI_Based_Task_Manager"
+  ],
+  "license": "ISC",
+  "author": "Khan",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.9.1"
+  }
+}
