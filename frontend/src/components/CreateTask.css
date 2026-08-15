@@ -1,0 +1,50 @@
+.task-manager-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.task-manager-header h1 {
+  font-size: 34px;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.task-manager-input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.task-manager-input,
+.task-manager-date-input,
+.status {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+  background: white;
+}
+
+.task-manager-date-input {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.task-manager-input:focus,
+.task-manager-date-input:focus,
+.status:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.status {
+  cursor: pointer;
+}
+
+.task-manager-add-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}

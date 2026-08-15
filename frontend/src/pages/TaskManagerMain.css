@@ -1,0 +1,14 @@
+.task-manager-add-button,
+.task-manager-show-button {
+  width: 180px;
+  padding: 14px;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}

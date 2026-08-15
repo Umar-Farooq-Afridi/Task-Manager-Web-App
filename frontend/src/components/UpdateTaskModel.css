@@ -1,0 +1,132 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.update-modal {
+  background: white;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.modal-header h2 {
+  font-size: 24px;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.modal-close-button {
+  border: none;
+  background: transparent;
+  font-size: 26px;
+  line-height: 1;
+  color: #6b7280;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-close-button:hover {
+  color: #1f2937;
+}
+
+.modal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.modal-field input,
+.modal-field textarea,
+.modal-field select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  background: white;
+  transition: 0.3s;
+}
+
+.modal-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.modal-field select {
+  cursor: pointer;
+}
+
+.modal-field input:focus,
+.modal-field textarea:focus,
+.modal-field select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.modal-cancel-button,
+.modal-update-button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-cancel-button {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.modal-cancel-button:hover {
+  background: #e5e7eb;
+}
+
+.modal-update-button {
+  background: #2563eb;
+  color: white;
+}
+
+.modal-update-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.task-manager-app-container {
+  width: 100%;
+  max-width: 850px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 265px) {
+  .task-manager-header h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 415px) {
+  .task-manager-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .task-manager-edit-delete-section {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .task-manager-app-container {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .task-manager-header h1 {
+    font-size: 28px;
+  }
+
+  .task-manager-item {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .task-manager-actions {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .task-manager-edit-button,
+  .task-manager-delete-button {
+    flex: 1;
+  }
+
+  .task-manager-add-button {
+    width: 100%;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-item button {
+    width: 100%;
+  }
+
+  .task-manager-show-button {
+    width: 100%;
+  }
+}
